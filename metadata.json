@@ -1,0 +1,6 @@
+{
+  "name": "ZERO",
+  "description": "An ultra-minimalist snow sports website with a binary palette and parallax-cascade scroll mechanics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

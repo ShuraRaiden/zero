@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Syncopate:wght@700&family=Space+Grotesk:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Syne", "Space Grotesk", "Inter", sans-serif;
+  --font-display: "Syncopate", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* Custom scrollbar and binary style utilities */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 3px;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* High contrast thresholding filters for making regular images look pure black and white */
+.binary-high-contrast {
+  filter: grayscale(100%) contrast(300%) brightness(95%);
+}
+
+.binary-high-contrast-extreme {
+  filter: grayscale(100%) contrast(400%) brightness(85%);
+}
+
+.binary-high-contrast-invert {
+  filter: grayscale(100%) contrast(300%) brightness(95%) invert(100%);
+}
